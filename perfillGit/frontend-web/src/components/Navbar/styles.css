@@ -1,0 +1,15 @@
+.main-nav {
+  padding-left: 40px;
+  min-height: 70px;
+  background-color: #1890ff;
+}
+
+.main-nav h4 {
+  color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
