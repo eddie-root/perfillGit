@@ -1,12 +1,9 @@
 .search-container {
   display: flex;
-  justify-items: center;
-  padding: 25px 10px;
+  flex-direction: column;
 }
 
 .git-search-container {
-  width: 290px;
-  height: 190px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -26,14 +23,62 @@
   margin-bottom: 22px;
 }
 
-button {
-  width: 30%;
+.search-input {
+  color: #5c5858;
+  width: 298px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 10px;
 }
 
-.resultcard {
+.search-button {
+  width: 101px;
+  height: 40px;
+  color: #ffffff;
+}
+
+.resultcard-container {
   height: 334px;
+  border-radius: 8px;
+  margin: 0px 40px;
+}
+
+.result-title {
+  margin-left: 0x;
+}
+
+.perfil-text {
+  width: 534px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #1890ff;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.information-section {
+  display: flex;
+  justify-items: center;
+  width: 1150px;
+  height: 330px;
   background: #f5f5f5;
   border-radius: 8px;
+}
+
+.result-section {
+  background: #ffffff;
+  width: 902px;
+  height: 247px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin: 40px 40px 40px 208px;
 }
 
 @media (min-width: 576px) {
@@ -77,10 +122,10 @@ button {
 
 @media (min-width: 1200px) {
   .git-search-container {
-    width: 100%;
+    width: 1150px;
     height: 270px;
     padding: 50px;
-    margin: 20px 90px;
+    margin: 20px 40px;
   }
 
   .git-search-container h1 {

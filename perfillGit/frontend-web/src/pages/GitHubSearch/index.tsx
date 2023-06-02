@@ -45,7 +45,7 @@ const GitSearch = () => {
   }
 
   return (
-    <div className="search-container">
+    <div className="search-container ">
       <div className="git-search-container">
         <h1>Encontre um perfil Github</h1>
         <form onSubmit={handleSubmint}>
@@ -61,18 +61,22 @@ const GitSearch = () => {
 
           </div>
           <button type="submit" className="btn btn-primary search-button">
-            Buscar
+            Encontrar
           </button>
         </form>
       </div>
-      <div className='resultcard'>
+      <div className='resultcard-container'>
+
         {perfil &&
-          <>
-            <ResultCard title='Perfil: ' description={perfil?.url} />
-            <ResultCard title='Seguidores: ' description="perfil?.followers" />
-            <ResultCard title='Locação: ' description={perfil?.location} />
-            <ResultCard title='Nome: ' description={perfil?.name} />
-          </>
+          <div className='information-section'>
+            <div className='result-section'>
+              <div className='perfil-text'>Informações</div>
+              <ResultCard title='Perfil: ' description={perfil?.url} />
+              <ResultCard title='Seguidores: ' description={String(perfil?.followers)} />
+              <ResultCard title='Locação: ' description={perfil?.location} />
+              <ResultCard title='Nome: ' description={perfil?.name} />
+            </div>
+          </div>
         }
 
       </div>
